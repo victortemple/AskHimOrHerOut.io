@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 52%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-image: url(pexels-lumn-399161.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Nunito", sans-serif;
+    font-family: "Varela Round", sans-serif;
+}
+
+.container{
+    width: 1420px;
+    margin: 0 auto;
+    /* background: rgba(0, 0, 0, 0.149); */
+    height: 100vh;
+}
+
+.frstHeader{
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #008000;
+    letter-spacing: 1.5px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 15rem;
+    animation-name: slideLeft;
+    animation-duration: 3s;
+}
+
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+.gfName{
+   color: #ff4161;
+   font-size: 3.2rem;
+}
+
+.theQuery{
+    display: none;
+}
+
+.kissingGif{
+    width: fit-content;
+    margin-block: 24rem;
+    margin-inline: auto;
+    box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+    display: none;
+}
+
+.thnxMss{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 1.8rem;
+    color: #ff0000;
+    animation-name: slidInUp;
+    animation-duration: 2s;
+    display: none;
+}
+@keyframes slidInUp{
+    from{
+        transform: translateY(150vh);
+    }
+}
+
+.ansButton{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2.8rem;
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    width: fit-content;
+    padding: 1.6rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    opacity: 60%;
+    box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    opacity: 100%;
+    border-radius: 1.8rem;
+}
+
+.yesBtn{
+    background: #008000;
+}
+
+.noBtn{
+    background: #ff0000;
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 100vw;
+        padding: 1rem;
+    }
+}
+
+label{
+    text-transform: capitalize;
+    font-size: 2.4rem;
+}
+
+#message{
+    width: fit-content;
+    margin: 34rem auto;
+    padding: 1.8rem;
+    border-radius: 2.4rem;
+    background: #0000004d;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#wtUsername{
+    margin-bottom: 1.4rem;
+}
+
+#UserName{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background: #ffffffc1;
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.8rem;
+    color: #ff4161;
+}
+
+.chooseGenderType{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.submitBtn{
+    background: #008000;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+@media(max-width: 400px){
+    .kissingGif{
+        width: 100vw;
+    }
+
+    .kissingGif img{
+        width: 100%;
+    }
+
+    .thnxMss{
+        text-align: center;
+    }
+}
